@@ -4,6 +4,7 @@
 
 Paper Link: [DOI:10.1007/s11554-017-0698-z](https://doi.org/10.1007/s11554-017-0698-z)
 
+Paper Abstract:
 This research presents the design of a real-time system to remove the effects of haze in a sequence of monocular images. The system firstly estimates the medium transmission function from an observed hazy image using locally adaptive neighborhoods and calculation of order statistics. Next, the haze-free image is retrieved using the estimated transmission function and a physics-based restoration model. The performance of the proposed system is evaluated and compared with that of similar existing techniques in terms of objective metrics. The obtained results exhibit that the proposed system yields a higher performance in comparison with tested similar methods. Because of its high computational efficiency, the proposed system is able to operate at high rate and it is suitable for real-time applications.
 
 Please cite this paper as follows (Bibtex citation):
