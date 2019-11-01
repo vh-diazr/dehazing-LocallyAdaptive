@@ -10,7 +10,7 @@ Please cite this paper as follows (Bibtex citation):
 
 	@article{Diaz-Ramirez2017,		
 	  title = "Real-time haze removal in monocular images using locally adaptive processing",
-	  author = "Diaz-Ramirez, Victor H. and Hern{\'a}ndez-Beltr{\'a}n, Jos{\'e} Enrique and Juarez-Salazar, Rigoberto"
+	  author = "Diaz-Ramirez, V. H. and Hernandez-Beltran, J. E. and Juarez-Salazar, R."
 	  journal = "Journal of Real-Time Image Processing",
 	  year = "2017",
 	} 
