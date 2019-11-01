@@ -19,6 +19,8 @@ Please cite this paper as follows (Bibtex citation):
 ## Example
 <p align="center">
 <img src="flores.png" width="250px" height="200px"/>         <img src="proposed_proc_02.png" width="250px" height="200px"/>
+<p align="center">
+<img src="maguey.png" width="250px" height="200px"/>         <img src="proposed_proc_02.png" width="250px" height="200px"/>	
 
 ## Prerequisites
 Python 3
