@@ -20,7 +20,7 @@ Please cite this paper as follows (Bibtex citation):
 <p align="center">
 <img src="flores.png" width="250px" height="200px"/>         <img src="proposed_proc_02.png" width="250px" height="200px"/>
 <p align="center">
-<img src="maguey.png" width="250px" height="200px"/>         <img src="proposed_proc_02.png" width="250px" height="200px"/>	
+<img src="maguey.png" width="250px" height="200px"/>         <img src="maguey_output.png" width="250px" height="200px"/>	
 
 ## Prerequisites
 Python 3
