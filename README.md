@@ -1,5 +1,4 @@
-# dehazing-locally_adaptive
-Real-time haze removal in monocular images using locally adaptive processing
+# Real-time haze removal in monocular images using locally adaptive processing
 
 [V. H. Diaz-Ramirez](https://orcid.org/0000-0002-9331-1777), [J. E. Hernandez-Beltran](https://orcid.org/0000-0002-7043-3093), [Rigoberto Juarez-Salazar](https://orcid.org/0000-0001-6917-7558)
 
