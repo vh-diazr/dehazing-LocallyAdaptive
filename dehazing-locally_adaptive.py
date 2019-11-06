@@ -67,7 +67,7 @@ S = 19 # Defines the size of sliding-window (SxS) for Airlight estimation
 #f_sin = im[:,:,0:3]
 
 ## Read the input hazy image from drive
-imgName = 'maguey'
+imgName = 'flores'
 f_c = np.double( imread(imgName +".png") ) # Read Input Hazy Image
 
 ####################
@@ -114,8 +114,8 @@ A_est = 0.2989*A[0] + 0.5870*A[1] + 0.1140*A[2]
 t_est = np.zeros([Nr,Nc])
 trans = np.zeros([Nr,Nc])
 
-PAR = [19, 0.01, 1.0, 8.] # Parameters for maguey
-#PAR = [5, 0.01, 10.0, 4.0] # Parameters for flores
+#PAR = [15, 0.01, 1.0, 4.] # Parameters for maguey
+PAR = [9, 0.01, 10.0, 4.0] # Parameters for flores
 #PAR = [19, 0.6, 0.6, 6.] # Parameters for fuente
 
 S = PAR[0]      # Defines the size of sliding-window SxS
@@ -151,7 +151,7 @@ for k in range(Nr):
 print('Done!')
 
 #trans = denoise_tv_chambolle(t_est, weight=1000.0, multichannel=False)
-trans = guidedFilter(np.uint8(f_c),np.uint8(255*t_est),15,0.1) / 255.0
+trans = guidedFilter(np.uint8(f_c),np.uint8(255*t_est),30,0.1) / 255.0
 
 y[:,:,0] = (f_c[:,:,0] - A[0]) / trans + A[0]
 y[:,:,1] = (f_c[:,:,1] - A[1]) / trans + A[1] 
