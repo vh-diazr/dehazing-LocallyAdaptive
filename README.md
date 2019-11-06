@@ -23,7 +23,9 @@ Please cite this paper as follows (Bibtex citation):
 <img src="maguey.png" width="250px" height="200px"/>         <img src="maguey_output.png" width="250px" height="200px"/>	
 
 ## Prerequisites
-Python 3, python packages: 
+Python 3 
+
+python packages: 
    opencv-contrib-python, numpy, matplotlib, scikit-image
 
 
