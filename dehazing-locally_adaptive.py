@@ -5,6 +5,12 @@ Spyder Editor
 This is a temporary script file.
 """
 
+##############################################################################
+## V.H. Diaz-Ramirez, J.E. Hernandez-Beltran, R. Juarez-Salazar, "Real-time haze removal in monocular images using locally adaptive processing, "
+##  Journal of Real-Time Image Processing, (2017)
+##  DOI:10.1007/s11554-017-0698-z
+##############################################################################
+
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2 
@@ -36,15 +42,6 @@ def KNB(mw,K):
     nbh_v[:,1] = nbh_t1[0:K]
     nbh_v[:,2] = nbh_t2[0:K]
     return nbh_v
-
-def EV(mw,ev):
-    r,c = mw.shape
-    cent = mw[int(floor(r/2)), int(floor(c/2))]
-    x,y = where( mw >= (cent-ev) )
-    nbh0 = ravel(mw[x,y])
-    x = where( nbh0 <= (cent + ev) )
-    nbh = nbh0[x]
-    return nbh
 
 def rgb2gray(img):
     img_gray = np.double( (0.2989*img[:,:,0] + 0.5870*img[:,:,0] + 0.1140*img[:,:,0])) # RGB to Gray Conversion
@@ -83,11 +80,7 @@ A3 = np.concatenate((np.flipud(np.fliplr(f_c)), np.flipud(f_c), np.flipud(np.fli
 f_proc = np.concatenate( (A1,A2,A3) ,axis=0)
 f_proc = f_proc[Nr-int((S-1)/2):2*Nr+int((S-1)/2), Nc-int((S-1)/2):2*Nc+int((S-1)/2),:]
 
-#f_proc = np.zeros([np.size(f_c,0)+S,np.size(f_c,1)+S,np.size(f_c,2)])
-#f_proc[int((S-1)/2):int((S-1)/2)+Nr,int((S-1)/2):int((S-1)/2)+Nc,:] = f_c.copy()
-
 A_test = np.zeros([Nr,Nc])
-#A_test2 = zeros([Nr,Nc])
 f_mv = np.zeros([S,S])
 K = np.floor(2*S*S/3)
 for k in range(Nr):
