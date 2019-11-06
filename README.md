@@ -23,17 +23,11 @@ Please cite this paper as follows (Bibtex citation):
 <img src="maguey.png" width="250px" height="200px"/>         <img src="maguey_output.png" width="250px" height="200px"/>	
 
 ## Prerequisites
-Python 3
-
-Install python packages: 
-   opencv-contrib-python, numpy, scipy, scikit-image
+Python 3 with the following packages: 
+   opencv-contrib-python, numpy, matplotlib, scikit-image
 
 
 ## Usage
-### To test the estimators GP-SD and GP-SN
-	python GPStatistics.py   
+	python dehazing-locally_adaptive.py   
 
-### To test the estimators GP-PD and GP-PN
-	python GPPixels.py   
-	
-NOTE: Read comments in the source file to select the estimators and modify parameters	
+NOTE: Read comments in the source file to modify parameters	
