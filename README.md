@@ -32,4 +32,4 @@ python packages:
 ## Usage
 	python dehazing-locally_adaptive.py   
 
-NOTE: Read comments in the source file to modify parameters	
+NOTE: Read comments in the source file to modify parameters.	
