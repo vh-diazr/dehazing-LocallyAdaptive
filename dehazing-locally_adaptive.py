@@ -6,7 +6,8 @@ This is a temporary script file.
 """
 
 ##############################################################################
-## V.H. Diaz-Ramirez, J.E. Hernandez-Beltran, R. Juarez-Salazar, "Real-time haze removal in monocular images using locally adaptive processing, "
+## V.H. Diaz-Ramirez, J.E. Hernandez-Beltran, R. Juarez-Salazar, 
+## "Real-time haze removal in monocular images using locally adaptive processing,"
 ##  Journal of Real-Time Image Processing, (2017)
 ##  DOI:10.1007/s11554-017-0698-z
 ##############################################################################
