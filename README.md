@@ -22,7 +22,7 @@ Please cite this paper as follows (Bibtex citation):
 <p align="center">
 <img src="maguey.png" width="250px" height="200px"/>         <img src="maguey_output.png" width="250px" height="200px"/>	
 
-An experimental demonstration of this work, can be seen in this [link](https://youtu.be/PyT3EBzzUYg)
+An experimental demonstration of this work, can be seen in [https://youtu.be/PyT3EBzzUYg](https://youtu.be/PyT3EBzzUYg)
 
 ## Prerequisites
 Python 3 
