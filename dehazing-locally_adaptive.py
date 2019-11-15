@@ -91,9 +91,9 @@ for k in range(Nr):
         f_mv = ( f_proc[ k:S+k, l:S+l ] )
         f_max = f_mv.max()
         f_min = f_mv.min()
-        #u = mean(f_mv[:])
+        #u = np.mean(f_mv[:])
         u = (f_min + f_max) / 2.0
-        #v = (1+var(f_mv[:]))
+        #v = (1 + np.var(f_mv[:]))
         v = f_max - f_min
         A_test[k,l] = u / (1 + v)
 print('Done!')
@@ -124,14 +124,11 @@ for k in range(Nr):
     leyend = 'Estimating Transmission: ' + str(int(100*(k+1)/Nr)) + '%'
     print(leyend)
     for l in range(Nc):
-        #while ch < 3:
         f_w = f_proc[ k:S+k, l:S+l, : ]
-
         f_v = KNB(f_w, K)
         Fmax = f_v.max()
         Fmin = f_v.min()
         range_fv = Fmax - Fmin
-        #fv_avg = (f_v.max())
         fv_avg = (Fmin+Fmax)/2.0
         if range_fv < w:
             range_fv = w 
@@ -156,6 +153,5 @@ y[xs,ys,zs] = 255.0
                     
 plt.subplot(121), plt.imshow(f_c/255.), plt.title('Hazy Image')
 plt.subplot(122), plt.imshow(y/255.), plt.title('Processed Image')
-
 
 imsave('%s_output.png' % (imgName), np.uint8(y))
