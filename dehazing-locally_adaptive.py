@@ -45,7 +45,7 @@ def KNB(mw,K):
     return nbh_v
 
 def rgb2gray(img):
-    img_gray = np.double( (0.2989*img[:,:,0] + 0.5870*img[:,:,0] + 0.1140*img[:,:,0])) # RGB to Gray Conversion
+    img_gray = np.double( (0.2989*img[:,:,0] + 0.5870*img[:,:,1] + 0.1140*img[:,:,2])) # RGB to Gray Conversion
     return img_gray
         
 S = 19 # Defines the size of sliding-window (SxS) for Airlight estimation
